@@ -631,6 +631,7 @@
     border-right: 1px dotted;
     border-color: #2bbc8a;
     vertical-align: middle;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #2bbc8a, 0 0 3vw #2bbc8a, 0 0 3vw #2bbc8a;
   }
   #header #nav ul .icon {
     display: none;
@@ -720,7 +721,7 @@
     margin-left: 15px;
   }
   #header-post #menu-icon:hover {
-    text-shadow: 2px 2px #2bbc8a;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #2bbc8a, 0 0 3vw #2bbc8a, 0 0 3vw #2bbc8a;
   }
   #header-post #menu-icon-tablet {
     float: right;
@@ -728,7 +729,7 @@
     margin-left: 15px;
   }
   #header-post #menu-icon-tablet:hover {
-    text-shadow: 2px 2px #2bbc8a;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #2bbc8a, 0 0 3vw #2bbc8a, 0 0 3vw #2bbc8a;
   }
   #header-post #top-icon-tablet {
     position: fixed;
