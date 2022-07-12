@@ -720,7 +720,7 @@
     margin-left: 15px;
   }
   #header-post #menu-icon:hover {
-    text-shadow: 2px 2px #2bbc8a;;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #header-post #menu-icon-tablet {
     float: right;
@@ -728,7 +728,7 @@
     margin-left: 15px;
   }
   #header-post #menu-icon-tablet:hover {
-    color: #2bbc8a;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #header-post #top-icon-tablet {
     position: fixed;
@@ -753,6 +753,7 @@
     font-weight: 200;
     font-style: normal;
     font-size: 0.8rem;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #header-post #nav ul {
     line-height: 15px;
