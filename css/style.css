@@ -761,6 +761,7 @@
   #header-post #nav ul a {
     margin-right: 15px;
     color: #2bbc8a;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #header-post #nav ul a:hover {
     background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
@@ -770,6 +771,7 @@
   }
   #header-post #nav ul li {
     border-right: 1px dotted #2bbc8a;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #header-post #nav ul li:last-child {
     margin-right: 0;
@@ -825,6 +827,7 @@
   #header-post #toc .toc-level-2:before {
     color: #2bbc8a;
     content: "#";
+    text-shadow: 2px 2px #2bbc8a;
   }
   #header-post #toc .toc-level-3 {
     color: #908d8d;
@@ -923,6 +926,7 @@
   #footer-post #nav-footer a {
     color: #2bbc8a;
     font-size: 1em;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #footer-post #nav-footer a:hover {
     background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
@@ -957,6 +961,7 @@
     display: inline-block;
     padding-left: 1rem;
     color: #2bbc8a;
+    text-shadow: 2px 2px #2bbc8a;
   }
   #footer-post #share-footer {
     padding-right: 1rem;
@@ -1005,6 +1010,7 @@
   #footer-post #toc-footer .toc-level-2:before {
     color: #2bbc8a;
     content: "#";
+    text-shadow: 2px 2px #2bbc8a;
   }
   #footer-post #toc-footer .toc-level-3 {
     color: #908d8d;
@@ -1093,6 +1099,7 @@
     content: "#";
     font-weight: bold;
     font-size: 1.2rem;
+    text-shadow: 2px 2px #2bbc8a;
   }
   article .content img,
   article .content video {
