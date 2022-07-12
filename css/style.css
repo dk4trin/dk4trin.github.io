@@ -1206,6 +1206,11 @@
   #archive .post-year {
     list-style-type: none;
   }
+
+  #about .about-me {
+    list-style-type: none;
+  }
+
   #archive .post-list {
     padding: 0;
   }
