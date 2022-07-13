@@ -608,7 +608,7 @@
     font-weight: 200;
     font-style: normal;
     font-size: 0.8rem;
-    text-shadow: 2px 2px 2px #2bbc8a, 0 0 2px #2bbc8a;
+    text-shadow: 2px 2px 2px #31dba0, 2px #2bbc8a;
   }
   #header #nav ul {
     margin: 0;
@@ -619,7 +619,7 @@
   #header #nav ul a {
     margin-right: 15px;
     color: #2bbc8a;
-    text-shadow: 2px 2px 2px #2bbc8a, 0 0 2px #2bbc8a;
+    text-shadow: 2px 2px 2px #31dba0, 2px #2bbc8a;
   }
   #header #nav ul a:hover {
     background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
