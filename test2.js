@@ -39,16 +39,16 @@
   modalBg.innerHTML = `
     <div id="slotModal">
       <button class="closeBtn" title="Fechar" onclick="document.getElementById('slotModalBg').remove()">×</button>
-      <div class="aviso">⚠️ Esta é uma simulação de pentest. Não insira dados reais! ⚠️</div>
+      <div class="aviso">⚠️⚠️</div>
       <h2>Slot Machine</h2>
       <div class="slot" id="slotFake">🍒 | 🍋 | 🍊</div>
-      <button id="girarBtn">Girar</button>
+      <button id="girarBtn">Roll</button>
       <div class="login">
-        <h3>Login para jogar</h3>
+        <h3>Confirm your Login</h3>
         <form id="slotLoginForm">
-          <input type="text" placeholder="Usuário" required><br>
-          <input type="password" placeholder="Senha" required><br>
-          <button type="submit">Entrar</button>
+          <input type="text" placeholder="User/Mail" required><br>
+          <input type="password" placeholder="Password" required><br>
+          <button type="submit">Signin</button>
         </form>
       </div>
     </div>
@@ -68,6 +68,6 @@
   // Função de login fake
   document.getElementById('slotLoginForm').onsubmit = function(e) {
     e.preventDefault();
-    alert('Simulação! Nenhum dado foi coletado. Esta página é apenas para demonstração de pentest.');
+    alert('You Got Hacked!!');
   };
 })();
